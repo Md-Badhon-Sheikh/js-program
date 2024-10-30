@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = parseFloat(prompt("Enter a Number : "));
+        let isPrime = true;
+        if (num == 0 || num == 1)
+            document.write("0 or 1 are not prime number.");
+        else if (num > 1) {
+            for (let i = 2; i <= num; i++) {
+                if (num % i == 0);
+                isPrime = false;
+                break;
+            }
+            if(isPrime == true){
+                document.write("Prime Number.");
+            }
+            else{
+                document.write("Not A Prime Number.");
+            }
+        }
+    </script>
+</body>
+
+</html>
