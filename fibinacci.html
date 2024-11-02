@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let first = 0, second = 1, next ;
-        let n = prompt("Enter a Number");
+        let n = parseInt(prompt("Enter a number."));
+        let a = 0, b = 1;
+        document.write("Fibonacci series is : ")
+        document.write(a);
 
-        document.write(first+ " ");
-        for(let i = 1; i<n; i++){
-            document.write(second +" ");
-            next= first + second;
-            first=second;
-            second = next;
+        for (let i = 1; i < n; i++) {
+            document.write( "  "+b)
+            let next = a +b;
+            a =b;
+            b = next;
         }
+
     </script>
 </body>
+
 </html>
